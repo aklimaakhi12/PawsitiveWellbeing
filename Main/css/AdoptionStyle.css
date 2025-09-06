@@ -1,0 +1,131 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+}
+
+.page-wrapper {
+    flex: 1; /* Take remaining height */
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+header nav {
+    margin: 10px 0;
+}
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+}
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+header img {
+    height: 60px;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn:hover {
+    background-color: #2980b9;
+}
+
+/* Adoption Styles */
+/* Grid container for the cards */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Individual card styling */
+.animal-card {
+    background-color: #f8f8f8; /* Light background for cards */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden; /* Ensure child elements stay within the card */
+    text-align: center; /* Center align text */
+    padding: 20px; /* Add spacing inside the card */
+    transition: transform 0.3s, box-shadow 0.3s; /* Add a hover effect */
+}
+
+.animal-card h3,
+.animal-card p {
+    margin: 5px 0; /* You can adjust this value */
+}
+
+/* Add a hover effect */
+.animal-card:hover {
+    transform: scale(1.05); /* Slightly zoom in */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increase shadow intensity */
+}
+
+/* Animal image styling */
+.animal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+}
+
+/* Button styling */
+.animal-card button {
+    background-color: #ff6f61; /* Accent color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.animal-card button:hover {
+    background-color: #e65a50; /* Slightly darker on hover */
+}
+
+/* Section title styling */
+#adoption h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: #333; /* Neutral text color */
+    font-size: 2rem;
+}
